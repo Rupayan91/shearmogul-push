@@ -41,16 +41,14 @@ app.post('/getNotification', function(req, res) {
                    body: messageObj.message,
                    receiver: messageObj.recvRefKey,
                    recvrName: messageObj.recvrName,
-                   senderName: messageObj.senderName,
-                   sender: messageObj.refKey
+                   senderName: messageObj.senderName
                },
                data: {  //you can send only notification or only data(or include both)
                    title: 'New message',
                    message: messageObj.message,
                    receiver: messageObj.recvRefKey,
                    recvrName: messageObj.recvrName,
-                  senderName: messageObj.senderName,
-                  sender: messageObj.refKey
+                  senderName: messageObj.senderName
                }
            };
            pushObj.push(message);
@@ -76,6 +74,6 @@ app.post('/getNotification', function(req, res) {
 
 });
 
-app.listen(3010, function() {
-    console.log('App is running on 3010 port')
+app.listen(3000, function() {
+    console.log('App is running on 3000 port')
 });

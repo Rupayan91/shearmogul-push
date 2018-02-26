@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
+    "fcm-node": "^1.2.1",
     "node-gcm": "^0.14.10"
   }
 }
